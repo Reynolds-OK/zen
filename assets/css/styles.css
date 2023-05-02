@@ -9,14 +9,14 @@ div.container{
     flex-direction: column;
     display: flex;
     z-index: 1;
-    width: 17%; 
+    width: 10%; 
     height: 100%
 }
 
 #space{
     position: absolute;
     right: 0;
-    width: 83%;
+    width: 90%;
 }
 
 p{
@@ -117,8 +117,8 @@ hr{
 }
 
 #helpdesk{
-    background-image: url('../images/bkg.jpg');
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+    background-image: url('../images/2.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -142,24 +142,24 @@ h4#desc{
 }
 
 /* Search */
-.form{
+.help_form{
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
-input{
+.help_form input{
     height: 50px !important;
-    width: 40% !important;
+    width:  40% !important;
     margin: 40px 0 40px 40px !important;
     border: 10px solid #923D41;
 }
 
 input:hover, input:focus{
-    box-shadow: 5px 2px 20px 1px #923D41 !important;
+    box-shadow: 0px 0px 10px #923D41 !important;
 }
 
-.btn{ 
+.help_form .btn{ 
     height: 50px;
     width: 50px;
 }
@@ -180,7 +180,7 @@ input:hover, input:focus{
     overflow-y: scroll;
     margin: 5% 0;
     border: 1px solid black;
-    box-shadow: 10px 10px 30px 10px #888888;
+    box-shadow: -10px 10px 15px #888888;
     border-radius: 20px;
 }
 
@@ -232,4 +232,211 @@ input:hover, input:focus{
 .second{
     color: #923D41;
     font-weight: bold;
+}
+
+
+/* Extra */
+.form-inline{
+    position: fixed;
+    bottom: 20;
+    text-align: center;
+    background-color: white;
+    padding: 10px 20px;
+    width: inherit;
+}
+
+.form-inline input{
+    height: 50px !important;
+    width:  100% !important;
+    margin: 10px 20px !important;
+    border: 10px solid #923D41;
+}
+
+.form-inline #date{
+    width:  90% !important;
+}
+
+.form-inline .btn{ 
+    height: 50px;
+    width: 80px;
+}
+
+input[type=checkbox]{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+}
+
+/* Might want to wrap a span around your checkbox text */
+.profile{
+    /* display: flex;
+    align-items: center; */
+    margin-left: 10%;
+}
+
+.form-check{
+  /* Checkbox text */
+  font-size: 110%;
+  display: inline;
+  accent-color:#923d41;
+}
+
+/* in profile */
+.box{
+    border: 1px solid #b9b9b9;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: -5px 5px 15px #888888;
+}
+
+.list-group {
+    margin: 0;
+    /* text-align: left; */
+}
+
+a.card-link{
+    text-align: right;
+}
+
+.cont { 
+    position: relative;
+}
+
+.cont .camera{
+    position: absolute; 
+    bottom:0%; 
+    right:30%; 
+    background-color: #e3e1e1;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile .fa-solid { 
+    margin-top: 50%;
+    color: black; 
+    height: 20px;
+    width: 40px; 
+}
+
+.profile .fa-solid:hover{
+    color: #923D41;
+    text-decoration: none;
+}
+
+.cont img{
+    height: 230px;  
+    width: 250px; 
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    box-shadow: 0px 0px 10px 2px #923D41;
+}
+
+.pen{
+    position: relative;
+}
+
+.pen .last{
+    position: absolute; 
+    bottom:0%; 
+    right:5%; 
+    text-decoration: none;
+}
+
+.box .this{
+    text-align: left;
+}
+
+.box h4{
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.boxx hr{
+    margin: 19px !important;
+}
+
+
+/* image page */
+.upload{
+    text-align: center;
+}
+
+.rule hr{
+    height: 2px;
+    width: 50%;
+    background-color: black;
+    margin: 30px auto !important;
+}
+
+.upload .cont{
+    display: flex;
+    justify-content: center;
+}
+
+.upload .cont img{
+    height: 180px;
+    width: 200px;
+}
+
+.desktop{
+    border: 1px dashed #923D41;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 5px #888888;
+    margin: auto 10%;
+}
+
+.desktop h4{
+    margin: 20px auto;
+}
+
+.fa-cloud-arrow-up{
+    color: #923D41;
+}
+
+.import{
+    border: 2px solid #b9b9b9;
+    border-radius: 10px;
+    margin: auto 20%;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1281px) {
+    .import {
+        margin: auto 5%;
+    }
+  }s
+
+.import .row{
+    margin: 10px auto !important;
+}
+
+input[type='file']{
+    border: 1px solid black;
+}
+
+.btn a{
+    color: white;
+}
+
+.btn a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+/* info */
+input.form-control{
+    height: 50px !important;
+}
+
+.py-5 label{
+    text-align: left;
 }
